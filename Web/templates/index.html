@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MICS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../static/style/style.css">
+</head>
+    <header>
+        <h1 class="tieude">Mango Image Classification System</h1>
+    </header>
+    <body>
+        <div class="container">
+            <br><br>
+            <div class="upload">
+                <form class="form-horizontal" action="/submit" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <!-- Upload image -->
+                        <label class="control-label col-sm-5" for="pwd">Up load your image:</label>
+                        <div class="col-sm-15">
+                            <input type="file" class="form-control" placeholder="Hours Studied" name="my_image" id="pwd">
+                        </div>
+                    </div>
+                    <!--Submit Button-->
+                    <div class="form-group">
+                        <div class="col-sm-offset-1 col-sm-10">
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            {% if prediction %}
+            <div class="left-colunm">
+                <div class="image-upload">
+                    <img src="{{img_path}}">
+                </div>
+                
+            </div>
+            
+            <div class="right-colunm">
+                <h2>Prediction: <br><br>
+                    <i>This is: {{prediction}}</i><br></br>
+                    <i>Status: {{status}}</i>
+                </h2>
+            </div>
+
+
+
+            
+            {% endif %}
+
+        </div>
+    </body>
+    <footer>
+        <div>© Đề tài thực tập VNPT 2023 - CTU - Nguyễn Quốc Trầm</div>
+    </footer>
+</html>

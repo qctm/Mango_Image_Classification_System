@@ -1,0 +1,81 @@
+h1{
+    background-color: brown;
+    color: orange;
+    font-size: 35px;
+    text-align: center;
+}
+h2{
+    font-size: 30px;
+    color: black;
+    margin-left: 15px;
+}
+
+.container{
+    background-color: rgba(0, 0, 233, 0.192);
+    border-color: black;
+    border-style: dashed;
+    height: 500px;
+    margin-top: 2%;
+}
+.left-colunm{
+    width: 45%;
+    height: 320px;
+    background: #ddd;
+    float: left;
+    border-color: chartreuse;
+    border-style: double;
+}
+.right-colunm{
+    width: 45%;
+    height: 320px;
+    background: #ddd;
+    float: right;
+    border-color: chartreuse;
+    border-style: double;
+}
+.form-horizontal{
+    float: center;
+}
+.form-group{
+    float: center;
+    margin: 12 auto;
+}
+.form-control{
+    width: 40%;
+}
+footer{
+    display: block;
+    text-align: center;
+    margin-top: 2%;
+}
+.upload{
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+img{
+    height: 300px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+}
+i{
+    margin-left: 10%;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* .table_his{
+    height: 500px;
+    width: 50%;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    display: block;
+    align-self: center;
+    background-color: cornflowerblue;
+
+} */
